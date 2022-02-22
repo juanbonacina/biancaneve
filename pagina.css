@@ -164,48 +164,13 @@
 /*FIN INDEX*/
 
 /*inicio pagina 1*/
-.main__ayuda1{
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows:16,6% 16,6% 16,6% 16,6% 16,6% ;
-                grid-template-areas:"header" 
-                                    "banner"
-                                    "form"
-                                    "articulos"
-                                    "banner2"
-                                    "footer";
-                                        }
-.div__header{
-            display: grid;
-            grid-area: header;
-                                }
-.div__main{
-            display: grid;
-            grid-area: banner;
-                            }
-.div__main2{
-            display: grid;
-             grid-area: banner2;
-                            }
-.div__form{
-            display: grid;
-            grid-area: form;
-                            }
-.div__articulo{
-                display: grid;
-                grid-area: articulos;
-                                    }
-.div__footer{
-                display: grid;
-                grid-area: footer;
-}
 
-.h2__ayuda{ border: solid black 2px; 
-            box-sizing: border-box;
+.h2__ayuda{ 
             text-align: center;}
 
 .main__ayuda{background-image: url(imagenes_biancaneve/main_pagina1.jpg);
-            height: 50vh;width: 97%vw; 
+            height: 50vh;
+            width: 97%vw; 
             background-size: cover;
             background-position: center;}
 
@@ -218,18 +183,12 @@
 
 
 .section__ayuda{ height:300px;
-                 width:1200px ;
                  background-color: white;
-                 margin-top: 50px;
                  display: flex;
                  flex-direction: row;
-                 margin: 0px;
-                 padding: 0px;}
-
-.aside__ayuda{height: 100px;
-              margin-top: 50px;
-              margin-left: 250px;}
-                    
+                 justify-content: center;
+                 align-content: center;
+                }
 
 textarea {height: 50px;
           width: 400px;
