@@ -21,20 +21,20 @@
                             
   /*inicio header*/
 
-.header{ background:rgb(241, 241, 241);
+.header{ 
+        background:rgb(241, 241, 241);
         color:rgb(37, 37, 37); 
-        height: 120px;
         grid-area: header;
         display: flex;
         flex-direction: column;}
 
 .header__titulo{text-align:center;}
 
-#header__nav{height: 50px; 
-            display:block; 
+#header__nav{  
             font-size: 22px;
             display: flex; 
             justify-content: right;
+            align-content: center;
         }
 
 .ul__index{
@@ -46,7 +46,7 @@
 #header__nav ul li {   
                         list-style: none; 
                         margin: 5px; 
-                        margin-bottom: 10px;}
+                       }
 
 #header__nav a{ 
                 text-decoration: none; 
@@ -60,7 +60,8 @@
 /*div*/
 .div__index{
             background-image: url(imagenes_biancaneve/main_imagen.jpg);
-            height: 50vh;width: 97%vw; 
+            height: 50vh;
+            width: 97%vw; 
             background-size: cover;
             background-position: center;
             grid-area: div;}
@@ -164,6 +165,28 @@
 /*FIN INDEX*/
 
 /*inicio pagina 1*/
+.nav__ayuda{
+            text-align: center;
+            }
+.ul__ayuda{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+#nav__ayuda ul li{ 
+                        list-style: none; 
+                        margin: 5px; 
+                         margin-bottom: 10px;
+                        }
+                    
+#nav__ayuda a {    
+                        text-decoration: none; 
+                        color: black;
+                        text-transform: capitalize;
+                    }
+#nav__ayuda a:hover{ 
+                        color: royalblue;
+                        }
 
 .h2__ayuda{ 
             text-align: center;}
@@ -182,13 +205,16 @@
 
 
 
-.section__ayuda{ height:300px;
+.section__ayuda{ 
                  background-color: white;
                  display: flex;
                  flex-direction: row;
                  justify-content: center;
                  align-content: center;
                 }
+.section__ayuda2{
+                border-top: solid black 2px;
+}
 
 textarea {height: 50px;
           width: 400px;
