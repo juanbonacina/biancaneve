@@ -230,36 +230,45 @@ textarea {height: 50px;
                  background-position:center;
                  font-size: 35px;
                  text-align: center;}
-.main__catalogo__p{padding-top: 100px;}                
-.main__catalogo2{background-image: url(imagenes_biancaneve/main3_pagina2.jpg);
+.main__catalogo__p{
+                    padding-top: 100px;}                
+.main__catalogo2{
+                background-image: url(imagenes_biancaneve/main3_pagina2.jpg);
                 height: 50vh;
                 width: 99,5vw;
                 background-size: cover;
                 background-position:center;}
 
-.main__catalogo3{background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
+.main__catalogo3{
+                background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
                  height: 85vh;
                  width: 99,5vw;
                  background-size: cover;
                  background-position:center;}
 
-.section__catalogo{ display: flex;
+.section__catalogo{
+                    display: flex;
                     flex-direction: column;
                     padding-bottom:60px;
                     background-color: rgb(241, 241, 241);}
 
-.article__catalogo{ display: flex;
+.article__catalogo{ 
+                    display: flex;
                     flex-direction:row;
                     align-content:flex-end;
                     margin-left: 350px;}
 
-#div__imagen2__catalogo{margin-right: 60px;}
-#div__imagen3__catalogo{margin-left: 60px;}
+#div__imagen2__catalogo{
+                        margin-right: 60px;}
+#div__imagen3__catalogo{
+                        margin-left: 60px;}
 
-#pagina2__section1__imagen1{margin-left: 550px;
+#pagina2__section1__imagen1{
+                            margin-left: 550px;
                             margin-bottom: 30px;}
 
-.section__catalogo2{  display: flex;
+.section__catalogo2{  
+                        display: flex;
                       flex-direction: row;
                       justify-content: space-between 50px;
                       background-color: rgb(241, 241, 241);
@@ -596,6 +605,55 @@ textarea {height: 50px;
                                         border-top:3px solid white ;
                                         border-bottom:3px solid white ;
                                                                 }   
-                                    
-                                    
+                                        
+                                        /*catalogo*/
+                                        .section__catalogo{
+                                            width:auto ;  
+                                            flex-direction: column;
+                                            border-top:3px solid white ;
+                                            border-bottom:3px solid white ; 
+                                            justify-content: center;
+                                        }
+                                        .article__catalogo{
+                                            width: auto;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            margin: 0px;
+                                        }
+
+                                        .section__catalogo2{
+                                            width:auto ;  
+                                            flex-direction: column;
+                                            border-top:3px solid white ;
+                                            border-bottom:3px solid white ; 
+                                            justify-content: center;
+                                        }
+                                        .main__catalogo{
+                                            width: 100vw;
+                                        }
+                                        .main__catalogo__p{
+                                            padding: 0px;
+                                        }
+                                        .main__catalogo2{
+                                            width: 100vw;
+                                        }
+                                        .main__catalogo3{
+                                            width: 100vw;
+                                        }
+                                        #div__imagen2__catalogo{
+                                            padding-left: 70px;
+                                            margin: 0px;
+                                            
+                                        }
+                                        #div__imagen3__catalogo{
+                                            padding-left: 70px;
+                                            margin: 0px;
+                                            
+                                        }
+
+                                        #pagina2__section1__imagen1{
+                                            padding-left: 70px;
+                                            margin: 0px;
+                                            
+                                        }
                                     }
