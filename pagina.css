@@ -255,22 +255,17 @@ textarea {height: 50px;
 .article__catalogo{ 
                     display: flex;
                     flex-direction:row;
-                    align-content:flex-end;
-                    margin-left: 350px;}
+                    justify-content: center;}
 
-#div__imagen2__catalogo{
-                        margin-right: 60px;}
-#div__imagen3__catalogo{
-                        margin-left: 60px;}
-
-#pagina2__section1__imagen1{
-                            margin-left: 550px;
-                            margin-bottom: 30px;}
+.div__imagen1__catalogo{
+                        display: flex;
+                        justify-content: center;
+}
 
 .section__catalogo2{  
                         display: flex;
                       flex-direction: row;
-                      justify-content: space-between 50px;
+                      justify-content: center;
                       background-color: rgb(241, 241, 241);
                       padding-bottom:60px;
                       padding-left: 50px;}
@@ -584,6 +579,7 @@ textarea {height: 50px;
                                         .section__biancaneve{
                                               width: 100vw;  
                                               flex-direction: column;
+                                              justify-content: center;
                                               align-content: center;
                                               border: 0px;
                                               border-top:3px solid white ;
@@ -629,31 +625,15 @@ textarea {height: 50px;
                                             justify-content: center;
                                         }
                                         .main__catalogo{
-                                            width: 100vw;
+                                            width: 97,5vw;
                                         }
                                         .main__catalogo__p{
                                             padding: 0px;
                                         }
                                         .main__catalogo2{
-                                            width: 100vw;
+                                            width: 97,5vw;
                                         }
                                         .main__catalogo3{
-                                            width: 100vw;
+                                            width: 97,5vw;
                                         }
-                                        #div__imagen2__catalogo{
-                                            padding-left: 70px;
-                                            margin: 0px;
-                                            
-                                        }
-                                        #div__imagen3__catalogo{
-                                            padding-left: 70px;
-                                            margin: 0px;
-                                            
-                                        }
-
-                                        #pagina2__section1__imagen1{
-                                            padding-left: 70px;
-                                            margin: 0px;
-                                            
-                                        }
-                                    }
+                                                                                    }
