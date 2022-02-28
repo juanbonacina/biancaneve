@@ -223,26 +223,28 @@ textarea {height: 50px;
 /*fin pagina 1*/
 
 /*inicio pagina 2*/
-.main__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
+.div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
                  height: 50vh;
-                 width: 99,5vw;
+                 width: 100%;
                  background-size: cover;
                  background-position:center;
                  font-size: 35px;
                  text-align: center;}
-.main__catalogo__p{
+.div__catalogo__p{
+                    display: flex;
                     padding-top: 100px;}                
-.main__catalogo2{
-                background-image: url(imagenes_biancaneve/main3_pagina2.jpg);
+.div__catalogo2{
+                background-image: url(imagenes_biancaneve/main3_pagina2.jdiv9);
                 height: 50vh;
-                width: 99,5vw;
+                width: 100%;
                 background-size: cover;
-                background-position:center;}
+                background-position:center ;
+            }
 
-.main__catalogo3{
+.div__catalogo3{
                 background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
                  height: 85vh;
-                 width: 99,5vw;
+                 width: 100%;
                  background-size: cover;
                  background-position:center;}
 
@@ -492,11 +494,11 @@ textarea {height: 50px;
                                         }
                                         .header{
                                                     justify-content: center;
-                                                    width: 97,5vw;
+                                                    width: 100%;
                                         }
 
                                         .div__index{
-                                                    width: 97,5vw;
+                                                    width: 100%;
                                         }                                        
 
                                         .main__index{
@@ -504,7 +506,7 @@ textarea {height: 50px;
                                         }
                                         
                                         .uno__section{
-                                                      width: 100vw;  
+                                                      width: 100%;  
                                                       flex-direction: column;
                                                       align-content: center;
                                                       border: 0px;
@@ -512,7 +514,7 @@ textarea {height: 50px;
                                                       border-bottom:3px solid white ;  
                                         }
                                         .dos__section{
-                                                      width:100vw ;  
+                                                      width:100% ;  
                                                       flex-direction: column;
                                                       text-align: center;
                                                       border: 0px;
@@ -520,7 +522,7 @@ textarea {height: 50px;
                                                       border-bottom:3px solid white ;  
                                         }
                                         .tres__section{
-                                                        width: 100vw;
+                                                        width: 100%;
                                                         flex-direction: column;
                                                         align-content: center;
                                                         border: 0px;
@@ -528,7 +530,7 @@ textarea {height: 50px;
                                                         border-bottom:3px solid white ;
                                         }
                                         .footer{
-                                                width: 100vw;
+                                                width: 100%;
                                                 flex-direction: column;
                                                 align-content: center;
                                                 border: 0px;
@@ -536,13 +538,13 @@ textarea {height: 50px;
                                                 border-bottom:3px solid white ;
                                             }
                                         .uno__imagen{
-                                                        width: 400px;
+                                                        width: 100%;
                                         }
                                         .dos__imagen{
-                                                        width: 400px;
+                                                        width: 100%;
                                         }
                                         .tres__imagen{
-                                                        width: 400px;
+                                                        width: 100%;
                                         }
                                     
                                         /*fin index*/
@@ -624,16 +626,19 @@ textarea {height: 50px;
                                             border-bottom:3px solid white ; 
                                             justify-content: center;
                                         }
-                                        .main__catalogo{
-                                            width: 97,5vw;
+                                        .div__catalogo{
+                                            width: 90%;
                                         }
-                                        .main__catalogo__p{
+                                        .div__catalogo__p{
                                             padding: 0px;
                                         }
-                                        .main__catalogo2{
-                                            width: 97,5vw;
+                                        .div__catalogo2{
+                                            width: 90%;
                                         }
-                                        .main__catalogo3{
-                                            width: 97,5vw;
+                                        .div__catalogo3{
+                                            width: 90%;
                                         }
-                                                                                    }
+                                        .imagen__catalogo2{
+                                            width: 100%;
+                                        }     
+                                    }
