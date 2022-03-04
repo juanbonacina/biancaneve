@@ -1,0 +1,598 @@
+*{margin: 0%;
+    padding: 0%;}
+    html{scroll-behavior: smooth;}
+           
+    /*inicio header*/
+  
+  .header{ 
+          background:rgb(241, 241, 241);
+          color:rgb(37, 37, 37); 
+          grid-area: header;
+          display: flex;
+          flex-direction: column;}
+  
+  .header__titulo{text-align:center;}
+  
+  #header__nav{  
+              font-size: 22px;
+              display: flex; 
+              justify-content: right;
+              align-content: center;
+          }
+  
+  .ul__index{
+              
+              display: flex;
+              flex-direction: row;
+  }
+              
+  #header__nav ul li {   
+                          list-style: none; 
+                          margin: 5px; 
+                         }
+  
+  #header__nav a{ 
+                  text-decoration: none; 
+                  color: black;
+                  text-transform: capitalize;}
+  
+  #header__nav a:hover{ color:royalblue;}
+  /*fin header*/
+  /*Inicio Index*/
+  
+  /*div*/
+  .div__index{
+              background-image: url(imagenes_biancaneve/main_imagen.jpg);
+              height: 50vh;
+              width: 97%vw; 
+              background-size: cover;
+              background-position: center;
+              grid-area: div;}
+  
+  /*section*/
+  .section__noticias{ 
+                      display: flex;
+                      border: solid white 3px;
+                      justify-content: center;
+                      background-color: rgb(241, 241, 241); 
+                      color: rgb(0, 0, 0);
+                      grid-area: noticias;}  
+  
+  /*modificacion general*/
+  .article__a{
+              text-decoration: none; 
+              color:white; 
+              font-size: 15px;}
+  
+  .article__a:hover{
+                  color: royalblue;}
+  
+  
+  .uno__section{
+      border: solid white 3px; 
+      height: 33,3% ;
+      font-style: italic 18px;
+      background:rgb(241, 241, 241); 
+      text-align: center;
+      color: rgb(0, 0, 0);
+      display: flex;
+      grid-area: section_uno;}
+      
+  
+  .uno{
+      padding-top: 60px;
+      padding-left: 40px;} 
+  
+  .uno__imagen{padding: 3px;}
+  
+  
+  
+  .dos__section{
+      border: solid white 3px;
+      height: 33,3% ;
+      font-style: italic 18px;
+      background:rgb(241, 241, 241); 
+      text-align: center; 
+      color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row-reverse;
+      grid-area: section_dos;}
+  
+  .dos{
+      padding-top: 70px;
+      padding-right: 50px;}
+  
+  .dos__imagen{padding: 0px; 
+              border: solid black 2px;}
+  
+  
+  .tres__section{
+       border: solid white 3px; 
+       height: 33,3%; 
+       font-style: italic 18px;
+       background:rgb(241, 241, 241);
+       text-align: center;
+       color: rgb(0, 0, 0);
+       display: flex;
+      grid-area: section_tres;}
+  
+  .tres{
+      padding-top: 60px;
+       padding-left: 40px;}
+  
+  .tres__imagen{
+                  padding: opx;
+                border: solid black 2px;}
+  
+  .footer{
+          display: flex;    
+          border: solid white 3px;
+          height:380px ;
+          text-align:center;
+          background: rgb(241, 241, 241);
+          color: rgb(0, 0, 0);
+          grid-area: footer;
+          flex-direction: column;}
+  
+  .footer__p { 
+              flex-direction: row;
+               margin: 5px;}
+  
+  .footer__inframe{
+       padding: 5px; 
+      }
+  
+  .article__a{
+      color: black;}
+  /*FIN INDEX*/
+  
+  /*inicio pagina 1*/
+  .nav__ayuda{
+              text-align: center;
+              }
+  .ul__ayuda{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+          }
+  #nav__ayuda ul li{ 
+                          list-style: none; 
+                          margin: 5px; 
+                           margin-bottom: 10px;
+                          }
+                      
+  #nav__ayuda a {    
+                          text-decoration: none; 
+                          color: black;
+                          text-transform: capitalize;
+                      }
+  #nav__ayuda a:hover{ 
+                          color: royalblue;
+                          }
+  
+  .h2__ayuda{ 
+              text-align: center;}
+  
+  .main__ayuda{background-image: url(imagenes_biancaneve/main_pagina1.jpg);
+              height: 50vh;
+              width: 97%vw; 
+              background-size: cover;
+              background-position: center;}
+  
+  .main__ayuda2{  background-image: url(imagenes_biancaneve/main3_pagina1.jpg);
+                  height: 55vh;
+                  width: 98,2vw; 
+                  background-size: cover;
+                  background-position: center;}
+  
+  
+  
+  .section__ayuda{ 
+                   background-color: white;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: center;
+                   align-content: center;
+                  }
+  .section__ayuda2{
+                  border-top: solid black 2px;
+  }
+  
+  textarea {height: 50px;
+            width: 400px;
+            resize: none;}
+  
+  /*fin pagina 1*/
+  
+  /*inicio pagina 2*/
+  .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
+                   height: 50vh;
+                   width: 100%;
+                   background-size: cover;
+                   background-position:center;
+                   font-size: 35px;
+                   text-align: center;}
+  .div__catalogo__p{
+                      display: flex;
+                      padding-top: 100px;}                
+  .div__catalogo2{
+                  background-image:url(imagenes_biancaneve/main3_pagina2.jpg);
+                  height: 50vh;
+                  width: 100%;
+                  background-size: cover;
+                  background-position:center ;
+              }
+  
+  .div__catalogo3{
+                  background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
+                   height: 85vh;
+                   width: 100%;
+                   background-size: cover;
+                   background-position:center;}
+  
+  .section__catalogo{
+                      display: flex;
+                      flex-direction: column;
+                      padding-bottom:60px;
+                      background-color: rgb(241, 241, 241);}
+  
+  .div__section__catalogo{ 
+                      display: flex;
+                      flex-direction:row;
+                      justify-content: center;}
+  
+  .div__imagen1__catalogo{
+                          display: flex;
+                          justify-content: center;
+  }
+  
+  .section__catalogo2{  
+                          display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        background-color: rgb(241, 241, 241);
+                        padding-bottom:60px;
+                        padding-left: 50px;}
+  /*fin pagina 2*/
+  
+  /*inicio pagina 3*/
+  
+  .section__biancaneve{   
+                          display: flex;
+                          flex-direction: row;
+                          background-color:rgb(241, 241, 241) ;
+                          grid-area: section1;
+                      }
+  
+  .section__biancaneve2{   
+                          display: flex;
+                          flex-direction: row;
+                          background-color:rgb(241, 241, 241) ;
+                          grid-area: section2;
+                      }
+  
+  .article__biancaneve{   
+                          display: flex;   
+                          flex-direction: column;
+                          text-align: center;
+                      }
+  
+  .article__biancaneve2{   
+                          display: flex;   
+                          flex-direction: column;
+                          text-align: center;
+                      }
+          
+  .section__biancaneve__ul{ 
+                          height: 70px;
+                          text-align: center;
+                          background-color:rgb(241, 241, 241);
+                          grid-area: section__ul ;
+                      }
+                         
+  .h1__biancaneve{
+                  text-align: center;
+                  text-transform: capitalize;
+                  background-color:rgb(241, 241, 241);
+                  padding-top: 40px;
+                  padding-bottom: 40px;
+                  grid-area: h1 ;
+              }
+  
+  .h3__biancaneve{
+                  text-align: center;
+                  text-transform: capitalize;
+                  background-color:rgb(241, 241, 241);
+                  grid-area: h3 ;
+                  }      
+                  
+  #nav__biancaneve{  
+                      height: 50px; 
+                      display:flex;
+                      flex-direction: row; 
+                      font-size: 22px;
+                      justify-content: center;}
+  
+  .ul__biancaneve{
+                  display: flex;
+                  flex-direction: row;
+  }
+                      
+  #nav__biancaneve ul li{ 
+                          list-style: none; 
+                          margin: 5px; 
+                          margin-bottom: 10px;}
+          
+  #nav__biancaneve a {    text-decoration: none; 
+                          color: black;
+                          text-transform: capitalize;}
+  #nav__biancaneve a:hover{ color: royalblue;}
+  
+  .div__biancaneve2{ 
+                      background-image: url(imagenes_biancaneve/main_biancaneve2.jpg);
+                      background-size: cover;
+                      height: 75vh;
+                      width: 98,5vw;
+                      background-position: center;
+                      grid-area: div2;}
+  
+  
+  .div__biancaneve3{
+                      background-image: url(imagenes_biancaneve/main_biancaneve3.jpg);
+                      background-position: center;
+                      background-size: cover;
+                      height: 75vh;
+                      width: 98,5vw;
+                      grid-area: div3;}
+              
+  .div__biancaneve{  background-image: url(imagenes_biancaneve/main_biancaneve.jpg);  
+                      background-size: cover;
+                      height: 75vh;
+                      width: 98,5vw;
+                      background-position: center;
+                      grid-area: div;}
+  /*Fin pagina 3*/
+  
+  /*Inicio pagina 4*/
+  .section__fundadores1{  display: flex;
+                          background-color:rgb(241, 241, 241) ;
+                          height: 400px;
+                      padding-top: 100px;}
+  .article__fundadores1{  display: flex;
+                          flex-direction: column;
+                          text-align: center;}
+  
+  .main__fundadores1{ background-image: url(imagenes_biancaneve/main__fundadores1.jpg);
+                      height: 80vh;
+                      width: 98,5vw;
+                      background-position: center;
+                      background-size:cover;}
+  
+  .main__fundadores2{ background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
+                      height: 50vh;
+                      width: 98,5vw;
+                      background-position: center;
+                      background-size: cover;}
+  
+  .main__fundadores3{ background-image:url(imagenes_biancaneve/main__fundadores3.jpg);
+                      height: 75vh;
+                      width: 98,5vw;
+                      background-position: center;
+                      background-size: cover;}
+  
+  .section__fundadores2{  height: 50px; 
+                          display:flex;
+                          justify-content: center;
+                          font-size: 22px;
+                          padding-bottom: 60px;
+                          padding-top: 40px;
+                          background-color:rgb(241, 241, 241)}
+  .h3__fundadores{    text-align: center;
+                      text-transform: capitalize;
+                      font-size: 22px;
+                      background-color:rgb(241, 241, 241) ;}
+  
+  .ul__fundadores{display: flex;
+                  flex-direction: row;
+                  padding-left: 20px;}
+  
+  .nav__fundadores ul li{ display:flex; 
+                          list-style: none; 
+                          margin: 5px; 
+                          margin-bottom: 10px;}
+  .nav__fundadores a{ text-decoration: none; 
+                      color: black;
+                      text-transform: capitalize;}
+  .nav__fundadores a:hover{color: royalblue;}
+  /* fin pagina 4*/
+  
+  /*inicio pagina 5*/
+  
+  .main__mision1{ background-image: url(imagenes_biancaneve/main__mision1.jpg);
+                  height: 70vh;
+                  width: 98,5vw;
+                  background-position: center;
+                  background-size: cover;}
+  
+  .main__mision2{ background-image: url(imagenes_biancaneve/main__mision2.jpg);
+                  height: 70vh;
+                  width: 98,5vw;
+                  background-position: center;
+                  background-size: cover;}
+  
+  
+  .section__mision1{  display: flex;
+                      flex-direction: row;
+                      background-color:rgb(241, 241, 241);
+                      }
+  .article__mision{   display: flex;
+                      flex-direction: column;
+                      padding-top: 50px;
+                      text-align: center;
+                      font-size: 18px;}
+  
+  .section__mision2{  display: flex;
+                      flex-direction: column;
+                      background-color:rgb(241, 241, 241);
+                      text-align: center;
+                      }
+                  
+  .nav__mision ul li{ display:flex; 
+                      list-style: none; 
+                      margin: 5px; 
+                      margin-bottom: 10px;}
+  .nav__mision a{ text-decoration: none; 
+                  color: black;
+                  text-transform: capitalize;}
+  .nav__mision a:hover{color: royalblue;}
+  
+  .ul__mision{    display: flex;
+                  flex-direction: row;
+                  padding-left: 20px;
+                  justify-content: center;
+                  text-transform: capitalize;
+                  font-size: 18px;}
+  
+  
+  @media screen and (max-width: 480px) {
+                                          *{
+                                              padding: 0px;
+                                              margin: 0px;
+                                              background-color:rgb(241, 241, 241) ;
+                                          }
+                                          .header{
+                                                      justify-content: center;
+                                                      width: 100%;
+                                          }
+  
+                                          .div__index{
+                                                      width: 100%;
+                                          }                                        
+  
+                                          .main__index{
+                                                       width: 100vw;
+                                          }
+                                          
+                                          .uno__section{
+                                                        width: 100%;  
+                                                        flex-direction: column;
+                                                        align-content: center;
+                                                        border: 0px;
+                                                        border-top:3px solid white ;
+                                                        border-bottom:3px solid white ;  
+                                          }
+                                          .dos__section{
+                                                        width:100% ;  
+                                                        flex-direction: column;
+                                                        text-align: center;
+                                                        border: 0px;
+                                                        border-top:3px solid white ;
+                                                        border-bottom:3px solid white ;  
+                                          }
+                                          .tres__section{
+                                                          width: 100%;
+                                                          flex-direction: column;
+                                                          align-content: center;
+                                                          border: 0px;
+                                                          border-top:3px solid white ;
+                                                          border-bottom:3px solid white ;
+                                          }
+                                          .footer{
+                                                  width: 100%;
+                                                  flex-direction: column;
+                                                  align-content: center;
+                                                  border: 0px;
+                                                  border-top:3px solid white ;
+                                                  border-bottom:3px solid white ;
+                                              }
+                                          .uno__imagen{
+                                                          width: 100%;
+                                          }
+                                          .dos__imagen{
+                                                          width: 100%;
+                                          }
+                                          .tres__imagen{
+                                                          width: 100%;
+                                          }
+                                      
+                                          /*fin index*/
+                                      
+                                          /*inicio pagina biancaneve*/
+                                          .div__biancaneve{
+                                                              width: 97,5vw;
+                                                           }
+  
+                                          .div__biancaneve2{
+                                                              width: 97,5vw;
+                                          }      
+  
+                                          .div__biancaneve3{
+                                                              width: 97,5vw;
+                                          }
+                                          
+                                          .imagen__biancaneve{
+                                                              width: 400px;
+                                          }
+                                         
+                                          .imagen__biancaneve2{
+                                                               width: 400px;
+                                          }
+                                          
+                                          .h1__biancaneve{
+                                                          width: auto;
+                                          }
+  
+                                          .h3__biancaneve{
+                                                          width: auto;
+                                          }
+  
+                                          .section__biancaneve{
+                                                width: 100vw;  
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-content: center;
+                                                border: 0px;
+                                                border-top:3px solid white ;
+                                                border-bottom:3px solid white ;  
+                                                          }
+                                          .section__biancaneve2{
+                                                width:100vw ;  
+                                                flex-direction: column;
+                                                text-align: center;
+                                                border: 0px;
+                                                border-top:3px solid white ;
+                                                border-bottom:3px solid white ;  
+                                                              }
+                                          .footer{
+                                          width: 100vw;
+                                          flex-direction: column;
+                                          align-content: center;
+                                          border: 0px;
+                                          border-top:3px solid white ;
+                                          border-bottom:3px solid white ;
+                                                                  }   
+                                          
+                                          /*catalogo*/
+                                          .section__catalogo{
+                                              width: 100%; 
+                                              flex-direction: column;
+                                              border-top:3px solid white ;
+                                              border-bottom:3px solid white ; 
+                                              justify-content: center;
+                                              align-content: center;
+                                          }
+                                          .div__section__catalogo{
+                                              flex-direction: column;
+                                          }
+  
+                                          .section__catalogo2{  
+                                              flex-direction: column;
+                                              justify-content: center;
+                                              align-content: center;
+                                          }
+  
+                                          .div__catalogo__p{
+                                              padding: 0px;
+                                              padding-left: 100px;
+                                          }
+                                      }
