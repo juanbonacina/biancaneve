@@ -1,4 +1,4 @@
-$sizes: (
+/*$sizes: (
     1: 400px,
     2: 600px,
     3: 800px
@@ -15,10 +15,10 @@ $stilo: (
     letras: salmon,
     altura: 500px,
     ancho:500px,
-    borde: solid black 4px
+    borde: solid black 4px,
     fondo: black,
-    fuente: italic
-    centro: center
+    fuente: italic,
+    centro: center,
 );
 
 .div1__sass{
@@ -27,10 +27,11 @@ $stilo: (
     height: map-get($stilo, altura );
     width: map-get($stilo, ancho );
     color: map-get($stilo, letras);
-}
+}*/
 
 
-*{margin: 0%;
+*{
+    margin: 0%;
     padding: 0%;}
     html{scroll-behavior: smooth;}
            
@@ -74,7 +75,7 @@ $stilo: (
   
   /*div*/
   .div__index{
-              background-image: url(imagenes_biancaneve/main_imagen.jpg);
+              background-image: url(imagenes_biancaneve/main_imagen1.jpg);
               height: 50vh;
               width: 97%vw; 
               background-size: cover;
@@ -93,11 +94,12 @@ $stilo: (
   /*modificacion general*/
   .article__a{
               text-decoration: none; 
-              color:white; 
-              font-size: 15px;}
+              color: black;
+              font-size: 15px;
   
-  .article__a:hover{
-                  color: royalblue;}
+            .article__a:hover{
+                            color: royalblue;}
+                }
   
   
   .uno__section{
@@ -105,37 +107,23 @@ $stilo: (
       height: 33,3% ;
       font-style: italic 18px;
       background:rgb(241, 241, 241); 
+      justify-content: center;
       text-align: center;
       color: rgb(0, 0, 0);
       display: flex;
       grid-area: section_uno;}
-      
-  
-  .uno{
-      padding-top: 60px;
-      padding-left: 40px;} 
-  
-  .uno__imagen{padding: 3px;}
-  
-  
+
   
   .dos__section{
       border: solid white 3px;
       height: 33,3% ;
       font-style: italic 18px;
       background:rgb(241, 241, 241); 
+      justify-content: center;
       text-align: center; 
       color: rgb(0, 0, 0);
       display: flex;
-      flex-direction: row-reverse;
       grid-area: section_dos;}
-  
-  .dos{
-      padding-top: 70px;
-      padding-right: 50px;}
-  
-  .dos__imagen{padding: 0px; 
-              border: solid black 2px;}
   
   
   .tres__section{
@@ -144,17 +132,10 @@ $stilo: (
        font-style: italic 18px;
        background:rgb(241, 241, 241);
        text-align: center;
+       justify-content: center;
        color: rgb(0, 0, 0);
        display: flex;
-      grid-area: section_tres;}
-  
-  .tres{
-      padding-top: 60px;
-       padding-left: 40px;}
-  
-  .tres__imagen{
-                  padding: opx;
-                border: solid black 2px;}
+       grid-area: section_tres;}
   
   .footer{
           display: flex;    
@@ -164,54 +145,58 @@ $stilo: (
           background: rgb(241, 241, 241);
           color: rgb(0, 0, 0);
           grid-area: footer;
-          flex-direction: column;}
+          flex-direction: column;
   
-  .footer__p { 
-              flex-direction: row;
-               margin: 5px;}
+        .footer__p { 
+                    flex-direction: row;
+                    margin: 5px;}
   
-  .footer__inframe{
-       padding: 5px; 
+        .footer__inframe{
+                    padding: 5px; 
       }
+    }
   
-  .article__a{
-      color: black;}
+  
   /*FIN INDEX*/
   
   /*inicio pagina 1*/
   .nav__ayuda{
-              text-align: center;
-              }
-  .ul__ayuda{
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-          }
-  #nav__ayuda ul li{ 
-                          list-style: none; 
-                          margin: 5px; 
-                           margin-bottom: 10px;
-                          }
+                text-align: center;
+              
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                                            }
+
+                li{ 
+                    list-style: none; 
+                    margin: 5px; 
+                    margin-bottom: 10px;
+                                        }
                       
-  #nav__ayuda a {    
-                          text-decoration: none; 
-                          color: black;
-                          text-transform: capitalize;
-                      }
-  #nav__ayuda a:hover{ 
-                          color: royalblue;
-                          }
+                a{    
+                    text-decoration: none; 
+                    color: black;
+                    text-transform: capitalize;
+                                                }
+
+                a:hover{ 
+                        color: royalblue;
+                                             }
+                                                    }
+
   
   .h2__ayuda{ 
               text-align: center;}
   
-  .main__ayuda{background-image: url(imagenes_biancaneve/main_pagina1.jpg);
+  .div__ayuda{background-image: url(imagenes_biancaneve/main_pagina1.jpg);
               height: 50vh;
               width: 97%vw; 
               background-size: cover;
               background-position: center;}
   
-  .main__ayuda2{  background-image: url(imagenes_biancaneve/main3_pagina1.jpg);
+  .div__ayuda2{  background-image: url(imagenes_biancaneve/main3_pagina1.jpg);
                   height: 55vh;
                   width: 98,2vw; 
                   background-size: cover;
@@ -246,14 +231,15 @@ $stilo: (
                    text-align: center;}
   .div__catalogo__p{
                       display: flex;
-                      padding-top: 100px;}                
+                      padding-top: 100px;
+                    }                
   .div__catalogo2{
                   background-image:url(imagenes_biancaneve/main3_pagina2.jpg);
                   height: 50vh;
                   width: 100%;
                   background-size: cover;
                   background-position:center ;
-              }
+                                                }
   
   .div__catalogo3{
                   background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
@@ -283,8 +269,7 @@ $stilo: (
                         flex-direction: row;
                         justify-content: center;
                         background-color: rgb(241, 241, 241);
-                        padding-bottom:60px;
-                        padding-left: 50px;}
+                                                                }
   /*fin pagina 2*/
   
   /*inicio pagina 3*/
@@ -300,7 +285,6 @@ $stilo: (
                           display: flex;
                           flex-direction: row;
                           background-color:rgb(241, 241, 241) ;
-                          grid-area: section2;
                       }
   
   .article__biancaneve{   
@@ -316,13 +300,37 @@ $stilo: (
                       }
           
   .section__biancaneve__ul{ 
-                          height: 70px;
-                          text-align: center;
-                          background-color:rgb(241, 241, 241);
-                          grid-area: section__ul ;
-                      }
+                            display:flex;
+                            justify-content: center;
+                            background-color:rgb(241, 241, 241);
                          
-  .h1__biancaneve{
+                          .nav__biancaneve{   
+                                            font-size: 22px;
+      
+                                            ul{
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-between;
+                                                    }
+                          
+                                            li{ 
+                                                
+                                                list-style: none; 
+                                                margin: 5px; 
+                                                                    }
+              
+                                            a {    
+                                                text-decoration: none; 
+                                                color: black;
+                                                text-transform: capitalize;
+                                                                            }
+                                            a:hover{ 
+                                                        color: royalblue;
+                                                                            }
+                                                                                }                      
+                                                                                    }
+                         
+  .h2__biancaneve{
                   text-align: center;
                   text-transform: capitalize;
                   background-color:rgb(241, 241, 241);
@@ -338,27 +346,8 @@ $stilo: (
                   grid-area: h3 ;
                   }      
                   
-  #nav__biancaneve{  
-                      height: 50px; 
-                      display:flex;
-                      flex-direction: row; 
-                      font-size: 22px;
-                      justify-content: center;}
-  
-  .ul__biancaneve{
-                  display: flex;
-                  flex-direction: row;
-  }
-                      
-  #nav__biancaneve ul li{ 
-                          list-style: none; 
-                          margin: 5px; 
-                          margin-bottom: 10px;}
-          
-  #nav__biancaneve a {    text-decoration: none; 
-                          color: black;
-                          text-transform: capitalize;}
-  #nav__biancaneve a:hover{ color: royalblue;}
+
+
   
   .div__biancaneve2{ 
                       background-image: url(imagenes_biancaneve/main_biancaneve2.jpg);
@@ -366,7 +355,8 @@ $stilo: (
                       height: 75vh;
                       width: 98,5vw;
                       background-position: center;
-                      grid-area: div2;}
+                      grid-area: div2;
+                    }
   
   
   .div__biancaneve3{
@@ -386,104 +376,134 @@ $stilo: (
   /*Fin pagina 3*/
   
   /*Inicio pagina 4*/
-  .section__fundadores1{  display: flex;
-                          background-color:rgb(241, 241, 241) ;
-                          height: 400px;
-                      padding-top: 100px;}
-  .article__fundadores1{  display: flex;
-                          flex-direction: column;
-                          text-align: center;}
+  .section__fundadores1{
+                        display: flex;
+                        background-color:rgb(241, 241, 241) ;
+                        }
+  .article__fundadores1{ 
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;}
   
-  .main__fundadores1{ background-image: url(imagenes_biancaneve/main__fundadores1.jpg);
+  .div__fundadores1{ 
+                    background-image: url(imagenes_biancaneve/main__fundadores1.jpg);
                       height: 80vh;
                       width: 98,5vw;
                       background-position: center;
                       background-size:cover;}
   
-  .main__fundadores2{ background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
+  .div__fundadores2{ 
+                    background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
                       height: 50vh;
                       width: 98,5vw;
                       background-position: center;
                       background-size: cover;}
   
-  .main__fundadores3{ background-image:url(imagenes_biancaneve/main__fundadores3.jpg);
+  .div__fundadores3{ 
+                    background-image:url(imagenes_biancaneve/main__fundadores3.jpg);
                       height: 75vh;
                       width: 98,5vw;
                       background-position: center;
                       background-size: cover;}
   
-  .section__fundadores2{  height: 50px; 
-                          display:flex;
-                          justify-content: center;
-                          font-size: 22px;
-                          padding-bottom: 60px;
-                          padding-top: 40px;
-                          background-color:rgb(241, 241, 241)}
-  .h3__fundadores{    text-align: center;
+  .h3__fundadores{    
+                    text-align: center;
                       text-transform: capitalize;
                       font-size: 22px;
                       background-color:rgb(241, 241, 241) ;}
+                      
+ .section__fundadores2{   
+                        display:flex;
+                        justify-content: center;
+                        font-size: 22px;
+                        background-color:rgb(241, 241, 241);
+
+                        .nav__fundadores{  
+                                
+                                        ul{
+                                            display: flex;
+                                            flex-direction: row;
+                                                                }
   
-  .ul__fundadores{display: flex;
-                  flex-direction: row;
-                  padding-left: 20px;}
-  
-  .nav__fundadores ul li{ display:flex; 
-                          list-style: none; 
-                          margin: 5px; 
-                          margin-bottom: 10px;}
-  .nav__fundadores a{ text-decoration: none; 
-                      color: black;
-                      text-transform: capitalize;}
-  .nav__fundadores a:hover{color: royalblue;}
+                                        li{ 
+                                            display:flex; 
+                                            list-style: none; 
+                                            margin: 5px; 
+                                                                }
+                                        a{ 
+                                            text-decoration: none; 
+                                            color: black;
+                                            text-transform: capitalize;
+                                                                        }
+                                        a:hover{
+                                                color: royalblue;
+                                                                    }
+
+                                                                        }
+                                                                            }
   /* fin pagina 4*/
   
   /*inicio pagina 5*/
   
-  .main__mision1{ background-image: url(imagenes_biancaneve/main__mision1.jpg);
+  .div__mision1{ 
+                background-image: url(imagenes_biancaneve/main__mision1.jpg);
                   height: 70vh;
                   width: 98,5vw;
                   background-position: center;
                   background-size: cover;}
   
-  .main__mision2{ background-image: url(imagenes_biancaneve/main__mision2.jpg);
+  .div__mision2{ 
+                background-image: url(imagenes_biancaneve/main__mision2.jpg);
                   height: 70vh;
                   width: 98,5vw;
                   background-position: center;
                   background-size: cover;}
   
   
-  .section__mision1{  display: flex;
+  .section__mision1{  
+                display: flex;
                       flex-direction: row;
                       background-color:rgb(241, 241, 241);
                       }
-  .article__mision{   display: flex;
+  .article__mision{   
+                display: flex;
                       flex-direction: column;
                       padding-top: 50px;
                       text-align: center;
                       font-size: 18px;}
   
-  .section__mision2{  display: flex;
-                      flex-direction: column;
-                      background-color:rgb(241, 241, 241);
-                      text-align: center;
-                      }
+  .section__mision2{  
+                        display: flex;
+                        flex-direction: column;
+                        background-color:rgb(241, 241, 241);
+                        text-align: center;
+                        justify-content: center;
+                     
+                        nav{
+
+                            ul{    
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                text-transform: capitalize;
+                                font-size: 22px;}
                   
-  .nav__mision ul li{ display:flex; 
-                      list-style: none; 
-                      margin: 5px; 
-                      margin-bottom: 10px;}
-  .nav__mision a{ text-decoration: none; 
-                  color: black;
-                  text-transform: capitalize;}
-  .nav__mision a:hover{color: royalblue;}
+                            li{ 
+                                display:flex; 
+                                list-style: none; 
+                                margin: 5px; 
+                                            }
+                            a{ 
+                                text-decoration: none; 
+                                color: black;
+                                text-transform: capitalize;
+                                                            }
+                            a:hover{
+                                        color: royalblue;
+                                                            }
   
-  .ul__mision{    display: flex;
-                  flex-direction: row;
-                  padding-left: 20px;
-                  justify-content: center;
-                  text-transform: capitalize;
-                  font-size: 18px;}
+                                                                }
+                                                                    }
   
   
   @media screen and (max-width: 480px) {

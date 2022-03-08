@@ -19,6 +19,14 @@
   border: solid black 3px;
 }
 
+.div1__sass {
+  background: black;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  color: salmon;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -87,7 +95,7 @@ html {
 /*Inicio Index*/
 /*div*/
 .div__index {
-  background-image: url(imagenes_biancaneve/main_imagen.jpg);
+  background-image: url(imagenes_biancaneve/main_imagen1.jpg);
   height: 50vh;
   width: 97%vw;
   background-size: cover;
@@ -112,11 +120,11 @@ html {
 /*modificacion general*/
 .article__a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 15px;
 }
 
-.article__a:hover {
+.article__a .article__a:hover {
   color: royalblue;
 }
 
@@ -125,6 +133,9 @@ html {
   height: 33,3%;
   font-style: italic 18px;
   background: #f1f1f1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: black;
   display: -webkit-box;
@@ -133,40 +144,20 @@ html {
   grid-area: section_uno;
 }
 
-.uno {
-  padding-top: 60px;
-  padding-left: 40px;
-}
-
-.uno__imagen {
-  padding: 3px;
-}
-
 .dos__section {
   border: solid white 3px;
   height: 33,3%;
   font-style: italic 18px;
   background: #f1f1f1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   grid-area: section_dos;
-}
-
-.dos {
-  padding-top: 70px;
-  padding-right: 50px;
-}
-
-.dos__imagen {
-  padding: 0px;
-  border: solid black 2px;
 }
 
 .tres__section {
@@ -175,21 +166,14 @@ html {
   font-style: italic 18px;
   background: #f1f1f1;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   grid-area: section_tres;
-}
-
-.tres {
-  padding-top: 60px;
-  padding-left: 40px;
-}
-
-.tres__imagen {
-  padding: opx;
-  border: solid black 2px;
 }
 
 .footer {
@@ -208,7 +192,7 @@ html {
           flex-direction: column;
 }
 
-.footer__p {
+.footer .footer__p {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -216,12 +200,8 @@ html {
   margin: 5px;
 }
 
-.footer__inframe {
+.footer .footer__inframe {
   padding: 5px;
-}
-
-.article__a {
-  color: black;
 }
 
 /*FIN INDEX*/
@@ -230,7 +210,7 @@ html {
   text-align: center;
 }
 
-.ul__ayuda {
+.nav__ayuda ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,19 +223,19 @@ html {
           justify-content: center;
 }
 
-#nav__ayuda ul li {
+.nav__ayuda li {
   list-style: none;
   margin: 5px;
   margin-bottom: 10px;
 }
 
-#nav__ayuda a {
+.nav__ayuda a {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
 }
 
-#nav__ayuda a:hover {
+.nav__ayuda a:hover {
   color: royalblue;
 }
 
@@ -263,7 +243,7 @@ html {
   text-align: center;
 }
 
-.main__ayuda {
+.div__ayuda {
   background-image: url(imagenes_biancaneve/main_pagina1.jpg);
   height: 50vh;
   width: 97%vw;
@@ -271,7 +251,7 @@ html {
   background-position: center;
 }
 
-.main__ayuda2 {
+.div__ayuda2 {
   background-image: url(imagenes_biancaneve/main3_pagina1.jpg);
   height: 55vh;
   width: 98,2vw;
@@ -413,7 +393,6 @@ textarea {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #f1f1f1;
-  grid-area: section2;
 }
 
 .article__biancaneve {
@@ -439,13 +418,48 @@ textarea {
 }
 
 .section__biancaneve__ul {
-  height: 70px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f1f1f1;
-  grid-area: section__ul;
 }
 
-.h1__biancaneve {
+.section__biancaneve__ul .nav__biancaneve {
+  font-size: 22px;
+}
+
+.section__biancaneve__ul .nav__biancaneve ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__biancaneve__ul .nav__biancaneve li {
+  list-style: none;
+  margin: 5px;
+}
+
+.section__biancaneve__ul .nav__biancaneve a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+.section__biancaneve__ul .nav__biancaneve a:hover {
+  color: royalblue;
+}
+
+.h2__biancaneve {
   text-align: center;
   text-transform: capitalize;
   background-color: #f1f1f1;
@@ -459,47 +473,6 @@ textarea {
   text-transform: capitalize;
   background-color: #f1f1f1;
   grid-area: h3;
-}
-
-#nav__biancaneve {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 22px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.ul__biancaneve {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-#nav__biancaneve ul li {
-  list-style: none;
-  margin: 5px;
-  margin-bottom: 10px;
-}
-
-#nav__biancaneve a {
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-}
-
-#nav__biancaneve a:hover {
-  color: royalblue;
 }
 
 .div__biancaneve2 {
@@ -536,8 +509,6 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   background-color: #f1f1f1;
-  height: 400px;
-  padding-top: 100px;
 }
 
 .article__fundadores1 {
@@ -551,7 +522,7 @@ textarea {
   text-align: center;
 }
 
-.main__fundadores1 {
+.div__fundadores1 {
   background-image: url(imagenes_biancaneve/main__fundadores1.jpg);
   height: 80vh;
   width: 98,5vw;
@@ -559,7 +530,7 @@ textarea {
   background-size: cover;
 }
 
-.main__fundadores2 {
+.div__fundadores2 {
   background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
   height: 50vh;
   width: 98,5vw;
@@ -567,26 +538,12 @@ textarea {
   background-size: cover;
 }
 
-.main__fundadores3 {
+.div__fundadores3 {
   background-image: url(imagenes_biancaneve/main__fundadores3.jpg);
   height: 75vh;
   width: 98,5vw;
   background-position: center;
   background-size: cover;
-}
-
-.section__fundadores2 {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 22px;
-  padding-bottom: 60px;
-  padding-top: 40px;
-  background-color: #f1f1f1;
 }
 
 .h3__fundadores {
@@ -596,7 +553,18 @@ textarea {
   background-color: #f1f1f1;
 }
 
-.ul__fundadores {
+.section__fundadores2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  background-color: #f1f1f1;
+}
+
+.section__fundadores2 .nav__fundadores ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,31 +572,29 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 20px;
 }
 
-.nav__fundadores ul li {
+.section__fundadores2 .nav__fundadores li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 5px;
-  margin-bottom: 10px;
 }
 
-.nav__fundadores a {
+.section__fundadores2 .nav__fundadores a {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
 }
 
-.nav__fundadores a:hover {
+.section__fundadores2 .nav__fundadores a:hover {
   color: royalblue;
 }
 
 /* fin pagina 4*/
 /*inicio pagina 5*/
-.main__mision1 {
+.div__mision1 {
   background-image: url(imagenes_biancaneve/main__mision1.jpg);
   height: 70vh;
   width: 98,5vw;
@@ -636,7 +602,7 @@ textarea {
   background-size: cover;
 }
 
-.main__mision2 {
+.div__mision2 {
   background-image: url(imagenes_biancaneve/main__mision2.jpg);
   height: 70vh;
   width: 98,5vw;
@@ -678,28 +644,12 @@ textarea {
           flex-direction: column;
   background-color: #f1f1f1;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.nav__mision ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  margin: 5px;
-  margin-bottom: 10px;
-}
-
-.nav__mision a {
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-}
-
-.nav__mision a:hover {
-  color: royalblue;
-}
-
-.ul__mision {
+.section__mision2 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,12 +657,29 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 22px;
+}
+
+.section__mision2 nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 5px;
+}
+
+.section__mision2 nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+.section__mision2 nav a:hover {
+  color: royalblue;
 }
 
 @media screen and (max-width: 480px) {

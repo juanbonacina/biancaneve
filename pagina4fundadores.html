@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="pagina.css" rel="stylesheet" >
 </head>
 <body>
@@ -12,49 +13,55 @@
         <h1 class="header__titulo" id="arriba">Biancaneve</h1>
         <h2 class="header__titulo">Sei uno con di bianca neve</h2>       
         <nav id="header__nav">
-            <ul>
-                <li ><a href="index.html">inicio</a></li>
-                <li><a href="pagina1ayuda.html">contacto</a></li>
-                <li><a href="pagina2catalogo.html">catalogo</a></li>
-                <li ><a href="#sucursal">sucursal</a></li>
+            <ul class="ul__index" aria-labelledby="navbarDropdown">
+                <li class="nav-item" ><a class="nav-link" href="index.html">inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sucursal">sucursal</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="active">Nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pagina1ayuda.html">contacto</a></li>
+                        <li><a class="dropdown-item" href="pagina2catalogo.html">catalogo</a></li>
+                        <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     
-<main class="main__fundadores1"></main>
+    <div class="div__fundadores1"></div>
 
-<section class="section__fundadores1">
-   <img src="imagenes_biancaneve/fundadores.jpg" height="300" width="450">
-    <article class="article__fundadores1">
-        <h1>Fundadores</h1>
-        <p>Los creadores de Biancaneve son dos jovenes apacionados por los deportes axtremos, ambos nacidos en San Martin de los Andes neuquen, amantesde la naturaleza, esta conbinacion los hizo crear una marca de equipamiento para deportes de nieve, la misma combina las practicidades necesarias para la realizacion de los deportes de forma comoda con una ayuda al cuidado ambiental.<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, soluta aperiam provident aut doloremque vel architecto cumque voluptatum. Optio voluptates neque, vitae ducimus quis nesciunt nemo iure eligendi provident autem!<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolore in, sed unde quisquam placeat corporis nostrum vero officia a consequuntur neque vel. Quasi, odio. Aspernatur quidem voluptas voluptate tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolore. Magnam, quo aspernatur sit labore dolorum odit voluptatibus earum pariatur eos. Delectus reprehenderit molestiae qui itaque, quae ad dolores nam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at, enim tempora reiciendis quam deserunt sit nostrum nam repudiandae ipsam, impedit corrupti, porro dolorum odit doloribus laboriosam corporis quod ut?</p>
-    </article> 
-</section>
+    <section class="section__fundadores1">
 
-<main class="main__fundadores2"></main>
+        <article class="article__fundadores1">
+            <h2>Fundadores</h2>
+            <p>Los creadores de Biancaneve son dos jovenes apacionados por los deportes axtremos, ambos nacidos en San Martin de los Andes neuquen, amantesde la naturaleza, esta conbinacion los hizo crear una marca de equipamiento para deportes de nieve, la misma combina las practicidades necesarias para la realizacion de los deportes de forma comoda con una ayuda al cuidado ambiental.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, soluta aperiam provident aut doloremque vel architecto cumque voluptatum. Optio voluptates neque, vitae ducimus quis nesciunt nemo iure eligendi provident autem!<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolore in, sed unde quisquam placeat corporis nostrum vero officia a consequuntur neque vel. Quasi, odio. Aspernatur quidem voluptas voluptate tenetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolore. Magnam, quo aspernatur sit labore dolorum odit voluptatibus earum pariatur eos. Delectus reprehenderit molestiae qui itaque, quae ad dolores nam?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at, enim tempora reiciendis quam deserunt sit nostrum nam repudiandae ipsam, impedit corrupti, porro dolorum odit doloribus laboriosam corporis quod ut?</p>
+        </article> 
+    </section>
 
-<h3 class="h3__fundadores">otros articulos</h3> 
-<section class="section__fundadores2"> 
-    <nav class="nav__fundadores">
-        <ul class="ul__fundadores">
-            <li><a href="pagina3biancaneve.html">Biancaneve</a></li>
-            <li><a href="index.html">inicio</a></li>
-            <li><a href="pagina5nuestra_mision.html">nuestra mision</a></li>
-        </ul>
-    </nav>     
-</section>
+    <div class="div__fundadores2"></div>
 
-<main class="main__fundadores3"></main>
+    <h3 class="h3__fundadores" id="noticias">otros articulos</h3>
+    <section class="section__fundadores2"> 
+        <nav class="nav__fundadores">
+            <ul class="ul__fundadores">
+                <li><a href="pagina3biancaneve.html">Biancaneve</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="pagina5nuestra_mision.html">nuestra mision</a></li>
+            </ul>
+        </nav>     
+    </section>
+
+    <div class="div__fundadores3"></div>
 
     <hr>
     <footer class="footer">
         <p class="footer__p">derechos reservados</p> <p class="footer__p">BIANCANEVE</p> <p><a href="#arriba">arriba</a></p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.541232792757!2d-58.36307693334673!3d-34.615760590695785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d738b2114b%3A0x772656d8f55f6893!2sJuana%20Manso%201576%2C%20C1107CHF%20CABA!5e0!3m2!1ses-419!2sar!4v1642249849891!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="sucursal" class="footer__inframe">sucursal</iframe>           
-</footer>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
