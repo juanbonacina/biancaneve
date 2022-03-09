@@ -1,4 +1,4 @@
-/*$sizes: (
+$sizes: (
     1: 400px,
     2: 600px,
     3: 800px
@@ -27,9 +27,9 @@ $stilo: (
     height: map-get($stilo, altura );
     width: map-get($stilo, ancho );
     color: map-get($stilo, letras);
-}*/
+                                    } 
 
-
+---------------------------------------------------------------------------------------------------------
 *{
     margin: 0%;
     padding: 0%;}
@@ -149,7 +149,8 @@ $stilo: (
   
         .footer__p { 
                     flex-direction: row;
-                    margin: 5px;}
+                    margin: 5px;
+                }
   
         .footer__inframe{
                     padding: 5px; 
@@ -224,7 +225,6 @@ $stilo: (
   /*inicio pagina 2*/
   .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
                    height: 50vh;
-                   width: 100%;
                    background-size: cover;
                    background-position:center;
                    font-size: 35px;
@@ -236,7 +236,6 @@ $stilo: (
   .div__catalogo2{
                   background-image:url(imagenes_biancaneve/main3_pagina2.jpg);
                   height: 50vh;
-                  width: 100%;
                   background-size: cover;
                   background-position:center ;
                                                 }
@@ -244,32 +243,68 @@ $stilo: (
   .div__catalogo3{
                   background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
                    height: 85vh;
-                   width: 100%;
                    background-size: cover;
                    background-position:center;}
   
   .section__catalogo{
-                      display: flex;
-                      flex-direction: column;
-                      padding-bottom:60px;
-                      background-color: rgb(241, 241, 241);}
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-bottom:60px;
+                        background-color: rgb(241, 241, 241);
+                        
+                        ul{
+                            display: flex;
+                        }
+                        li{
+                            list-style: none;
+                            margin-bottom: 20px;
+                        }
+                    }
   
   .div__section__catalogo{ 
                       display: flex;
                       flex-direction:row;
-                      justify-content: center;}
+                      align-items: center;
+                                        
+                      div{
+                          display: flex;
+                          flex-direction: column;
+                      }
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                      }
+                        li{
+                            margin-left:40px;
+                        }
+                    }
   
   .div__imagen1__catalogo{
                           display: flex;
                           justify-content: center;
+                          flex-direction: column;
   }
   
   .section__catalogo2{  
-                          display: flex;
+                        display: flex;
                         flex-direction: row;
                         justify-content: center;
                         background-color: rgb(241, 241, 241);
-                                                                }
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        ul{
+                            display: flex;
+                        }
+                        li{
+                            list-style: none;
+                            margin-left: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
   /*fin pagina 2*/
   
   /*inicio pagina 3*/
@@ -550,7 +585,6 @@ $stilo: (
                                                           border-bottom:3px solid white ;
                                           }
                                           .footer{
-                                                  width: 100%;
                                                   flex-direction: column;
                                                   align-content: center;
                                                   border: 0px;
@@ -599,7 +633,6 @@ $stilo: (
                                           }
   
                                           .section__biancaneve{
-                                                width: 100vw;  
                                                 flex-direction: column;
                                                 justify-content: center;
                                                 align-content: center;
@@ -608,7 +641,6 @@ $stilo: (
                                                 border-bottom:3px solid white ;  
                                                           }
                                           .section__biancaneve2{
-                                                width:100vw ;  
                                                 flex-direction: column;
                                                 text-align: center;
                                                 border: 0px;
@@ -616,7 +648,6 @@ $stilo: (
                                                 border-bottom:3px solid white ;  
                                                               }
                                           .footer{
-                                          width: 100vw;
                                           flex-direction: column;
                                           align-content: center;
                                           border: 0px;
@@ -626,7 +657,6 @@ $stilo: (
                                           
                                           /*catalogo*/
                                           .section__catalogo{
-                                              width: 100%; 
                                               flex-direction: column;
                                               border-top:3px solid white ;
                                               border-bottom:3px solid white ; 
@@ -634,13 +664,24 @@ $stilo: (
                                               align-content: center;
                                           }
                                           .div__section__catalogo{
-                                              flex-direction: column;
+                                                
+                                            align-items: center;
+                                              ul{
+                                                  display: flex;
+                                                  flex-direction: column;
+                                              }
+                                              li{
+                                                  margin: 0px;
+                                              }
                                           }
+
   
                                           .section__catalogo2{  
-                                              flex-direction: column;
-                                              justify-content: center;
                                               align-content: center;
+                                              ul{
+                                                  display: flex;
+                                                  flex-direction: column;
+                                              }
                                           }
   
                                           .div__catalogo__p{
