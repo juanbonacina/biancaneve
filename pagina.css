@@ -104,6 +104,53 @@ html {
   grid-area: div;
 }
 
+.div__imagenes__index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50;
+  background-color: #f1f1f1;
+}
+
+.imagen__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.imagen__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.section__envios {
+  text-align: center;
+  font-size: 32px;
+  background-color: #f1f1f1;
+  height: 160px;
+}
+
 /*section*/
 .section__noticias {
   display: -webkit-box;
@@ -181,28 +228,45 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid white 3px;
-  height: 380px;
-  text-align: center;
   background: #f1f1f1;
-  color: black;
-  grid-area: footer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.footer .footer__p {
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.footer .footer__inframe {
-  padding: 5px;
+.footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /*FIN INDEX*/
@@ -297,25 +361,35 @@ textarea {
   text-align: center;
 }
 
-.div__catalogo__p {
+.div__catalogo2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
-}
-
-.div__catalogo2 {
-  background-image: url(imagenes_biancaneve/main3_pagina2.jpg);
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
+  background-color: #f1f1f1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
 }
 
 .div__catalogo3 {
-  background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
-  height: 85vh;
-  background-size: cover;
-  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f1f1f1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.div__catalogo4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f1f1f1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__catalogo {
@@ -426,7 +500,44 @@ textarea {
 .section__catalogo2 li {
   list-style: none;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.div__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.div__productos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div__productos li {
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.div__productos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*fin pagina 2*/
@@ -753,6 +864,25 @@ textarea {
             justify-content: center;
     width: 100%;
   }
+  .imagen__1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+  }
+  .imagen__2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .div__index {
     width: 100%;
   }
@@ -901,11 +1031,12 @@ textarea {
             flex-direction: column;
   }
   .div__section__catalogo li {
-    margin: 0px;
+    margin-left: 0px;
   }
   .section__catalogo2 {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .section__catalogo2 ul {
     display: -webkit-box;
@@ -915,6 +1046,24 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .div__productos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .div__productos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .div__productos li {
+    margin-top: 20px;
+    margin-left: 0px;
   }
   .div__catalogo__p {
     padding: 0px;

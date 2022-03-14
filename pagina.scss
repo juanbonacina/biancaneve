@@ -81,6 +81,33 @@ $stilo: (
               background-size: cover;
               background-position: center;
               grid-area: div;}
+
+.div__imagenes__index{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 50;
+                        background-color: rgb(241, 241, 241) ;
+                        }
+.imagen__1{
+            display: flex ;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+}
+.imagen__2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+}
+
+.section__envios{
+                text-align: center;
+                font-size: 32px;
+                background-color: rgb(241, 241, 241);
+                height: 160px;
+}
+
   
   /*section*/
   .section__noticias{ 
@@ -139,24 +166,24 @@ $stilo: (
   
   .footer{
           display: flex;    
-          border: solid white 3px;
-          height:380px ;
-          text-align:center;
           background: rgb(241, 241, 241);
-          color: rgb(0, 0, 0);
-          grid-area: footer;
           flex-direction: column;
-  
-        .footer__p { 
-                    flex-direction: row;
-                    margin: 5px;
-                }
-  
-        .footer__inframe{
-                    padding: 5px; 
-      }
+          
+          div{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+          }
+          section{
+              display: flex;
+              flex-direction: column;
+          }
     }
-  
+ .section__footer{
+                    display: flex;
+                    flex-direction: row;         
+  }
   
   /*FIN INDEX*/
   
@@ -223,28 +250,32 @@ $stilo: (
   /*fin pagina 1*/
   
   /*inicio pagina 2*/
-  .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
+    .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
                    height: 50vh;
                    background-size: cover;
                    background-position:center;
                    font-size: 35px;
-                   text-align: center;}
-  .div__catalogo__p{
-                      display: flex;
-                      padding-top: 100px;
-                    }                
-  .div__catalogo2{
-                  background-image:url(imagenes_biancaneve/main3_pagina2.jpg);
-                  height: 50vh;
-                  background-size: cover;
-                  background-position:center ;
+                   text-align: center;
+                   }
+     
+    .div__catalogo2{
+                    display: flex;                
+                    background-color: rgb(241, 241, 241);
+                    justify-content: center;
+                    padding-bottom: 20px;
                                                 }
   
-  .div__catalogo3{
-                  background-image: url(imagenes_biancaneve/main1_pagina2.jpg);
-                   height: 85vh;
-                   background-size: cover;
-                   background-position:center;}
+    .div__catalogo3{
+                    display: flex;                
+                    background-color: rgb(241, 241, 241);
+                    justify-content: center;
+                }
+
+    .div__catalogo4{
+                    display: flex;                
+                    background-color: rgb(241, 241, 241);
+                    justify-content: center;
+                }
   
   .section__catalogo{
                         display: flex;
@@ -302,9 +333,30 @@ $stilo: (
                         li{
                             list-style: none;
                             margin-left: 20px;
-                            margin-bottom: 20px;
+                            margin-bottom: 30px;
+                            margin-top: 30px;
                         }
                     }
+    
+   .div__productos{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color:rgb(241, 241, 241);
+                    ul{
+                        display: flex;
+                    }
+                    li{
+                        list-style: none;
+                        margin-left: 30px;
+                        margin-top: 30px;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+    }
+    
   /*fin pagina 2*/
   
   /*inicio pagina 3*/
@@ -551,7 +603,18 @@ $stilo: (
                                                       justify-content: center;
                                                       width: 100%;
                                           }
-  
+
+                                          .imagen__1{
+                                              display: flex;
+                                              flex-direction: column;
+                                              margin: 0px;
+                                          }
+
+                                        .imagen__2{
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
+
                                           .div__index{
                                                       width: 100%;
                                           }                                        
@@ -671,16 +734,28 @@ $stilo: (
                                                   flex-direction: column;
                                               }
                                               li{
-                                                  margin: 0px;
+                                                  margin-left: 0px;
                                               }
                                           }
 
   
                                           .section__catalogo2{  
-                                              align-content: center;
+                                              justify-content: center;
                                               ul{
                                                   display: flex;
                                                   flex-direction: column;
+                                              }
+                                          }
+
+                                          .div__productos{
+                                              justify-content:center;
+                                              ul{
+                                                  display: flex;
+                                                  flex-direction: column;
+                                              }
+                                              li{
+                                                  margin-top: 20px;
+                                                  margin-left: 0px;
                                               }
                                           }
   
