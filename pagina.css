@@ -306,6 +306,7 @@ html {
 
 .h2__ayuda {
   text-align: center;
+  background-color: #f1f1f1;
 }
 
 .div__ayuda {
@@ -325,7 +326,7 @@ html {
 }
 
 .section__ayuda {
-  background-color: white;
+  background-color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,6 +343,7 @@ html {
 
 .section__ayuda2 {
   border-top: solid black 2px;
+  background-color: #f1f1f1;
 }
 
 textarea {
@@ -540,6 +542,40 @@ textarea {
           flex-direction: column;
 }
 
+.nav__catalogo {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.nav__catalogo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__catalogo li {
+  list-style: none;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.nav__catalogo a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+.nav__catalogo a:hover {
+  color: royalblue;
+}
+
 /*fin pagina 2*/
 /*inicio pagina 3*/
 .section__biancaneve {
@@ -551,7 +587,6 @@ textarea {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #f1f1f1;
-  grid-area: section1;
 }
 
 .section__biancaneve2 {
@@ -635,14 +670,12 @@ textarea {
   background-color: #f1f1f1;
   padding-top: 40px;
   padding-bottom: 40px;
-  grid-area: h1;
 }
 
 .h3__biancaneve {
   text-align: center;
   text-transform: capitalize;
   background-color: #f1f1f1;
-  grid-area: h3;
 }
 
 .div__biancaneve2 {
@@ -651,7 +684,6 @@ textarea {
   height: 75vh;
   width: 98,5vw;
   background-position: center;
-  grid-area: div2;
 }
 
 .div__biancaneve3 {
@@ -660,16 +692,16 @@ textarea {
   background-size: cover;
   height: 75vh;
   width: 98,5vw;
-  grid-area: div3;
 }
 
 .div__biancaneve {
-  background-image: url(imagenes_biancaneve/main_biancaneve.jpg);
-  background-size: cover;
-  height: 75vh;
-  width: 98,5vw;
-  background-position: center;
-  grid-area: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f1f1;
 }
 
 /*Fin pagina 3*/
@@ -700,7 +732,7 @@ textarea {
   background-size: cover;
 }
 
-.div__fundadores2 {
+.div__fundadores3 {
   background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
   height: 50vh;
   width: 98,5vw;
@@ -708,12 +740,14 @@ textarea {
   background-size: cover;
 }
 
-.div__fundadores3 {
-  background-image: url(imagenes_biancaneve/main__fundadores3.jpg);
-  height: 75vh;
-  width: 98,5vw;
-  background-position: center;
-  background-size: cover;
+.div__fundadores2 {
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .h3__fundadores {

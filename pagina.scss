@@ -216,7 +216,9 @@ $stilo: (
 
   
   .h2__ayuda{ 
-              text-align: center;}
+              text-align: center;
+              background-color: rgb(241, 241, 241);
+            }
   
   .div__ayuda{background-image: url(imagenes_biancaneve/main_pagina1.jpg);
               height: 50vh;
@@ -233,7 +235,7 @@ $stilo: (
   
   
   .section__ayuda{ 
-                   background-color: white;
+                   background-color: rgb(241, 241, 241);
                    display: flex;
                    flex-direction: row;
                    justify-content: center;
@@ -241,6 +243,7 @@ $stilo: (
                   }
   .section__ayuda2{
                   border-top: solid black 2px;
+                  background-color: rgb(241, 241, 241);
   }
   
   textarea {height: 50px;
@@ -356,6 +359,32 @@ $stilo: (
                         flex-direction: column;
                     }
     }
+
+    .nav__catalogo{
+            text-align: center;
+            background-color: rgb(241, 241, 241) ;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                                        }
+
+            li{ 
+                list-style: none; 
+                margin: 5px; 
+                margin-bottom: 10px;
+                                     }
+              
+             a{    
+                text-decoration: none; 
+                color: black;
+                text-transform: capitalize;
+                                            }
+
+            a:hover{ 
+                    color: royalblue;
+                                        }
+    }
     
   /*fin pagina 2*/
   
@@ -365,7 +394,6 @@ $stilo: (
                           display: flex;
                           flex-direction: row;
                           background-color:rgb(241, 241, 241) ;
-                          grid-area: section1;
                       }
   
   .section__biancaneve2{   
@@ -423,14 +451,12 @@ $stilo: (
                   background-color:rgb(241, 241, 241);
                   padding-top: 40px;
                   padding-bottom: 40px;
-                  grid-area: h1 ;
-              }
+  }
   
   .h3__biancaneve{
                   text-align: center;
                   text-transform: capitalize;
                   background-color:rgb(241, 241, 241);
-                  grid-area: h3 ;
                   }      
                   
 
@@ -442,8 +468,7 @@ $stilo: (
                       height: 75vh;
                       width: 98,5vw;
                       background-position: center;
-                      grid-area: div2;
-                    }
+                      }
   
   
   .div__biancaneve3{
@@ -452,14 +477,13 @@ $stilo: (
                       background-size: cover;
                       height: 75vh;
                       width: 98,5vw;
-                      grid-area: div3;}
+                    }
               
-  .div__biancaneve{  background-image: url(imagenes_biancaneve/main_biancaneve.jpg);  
-                      background-size: cover;
-                      height: 75vh;
-                      width: 98,5vw;
-                      background-position: center;
-                      grid-area: div;}
+  .div__biancaneve{
+                    display: flex;
+                    justify-content: center;
+                    background-color:rgb(241, 241, 241) ;
+                    }
   /*Fin pagina 3*/
   
   /*Inicio pagina 4*/
@@ -479,19 +503,18 @@ $stilo: (
                       background-position: center;
                       background-size:cover;}
   
-  .div__fundadores2{ 
+  .div__fundadores3{ 
                     background-image: url(imagenes_biancaneve/main__fundadores2.jpg);
                       height: 50vh;
                       width: 98,5vw;
                       background-position: center;
                       background-size: cover;}
   
-  .div__fundadores3{ 
-                    background-image:url(imagenes_biancaneve/main__fundadores3.jpg);
-                      height: 75vh;
-                      width: 98,5vw;
-                      background-position: center;
-                      background-size: cover;}
+  .div__fundadores2{ 
+                   background-color: rgb(241, 241, 241) ;
+                   display: flex;
+                   justify-content: center;
+                    }
   
   .h3__fundadores{    
                     text-align: center;
