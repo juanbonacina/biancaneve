@@ -36,22 +36,35 @@ $stilo: (
     html{scroll-behavior: smooth;}
            
     /*inicio header*/
-  
   .header{ 
-          background:rgb(241, 241, 241);
-          color:rgb(37, 37, 37); 
-          grid-area: header;
-          display: flex;
-          flex-direction: column;}
-  
-  .header__titulo{text-align:center;}
-  
-  #header__nav{  
-              font-size: 22px;
+            background:rgb(241, 241, 241);
+            color:rgb(37, 37, 37);
+            display: flex;
+            flex-direction: column;
+            nav{
+                font-size: 22px;
               display: flex; 
               justify-content: right;
               align-content: center;
-          }
+            }
+            li{
+                list-style: none; 
+                margin: 5px;
+            }
+            a{
+                text-decoration: none; 
+                  color: black;
+                  text-transform: capitalize;
+            }
+            a:hover{ 
+                color:royalblue;
+            }
+
+            }
+  
+  .header__titulo{
+      text-align:center;
+}
   
   .ul__index{
               
@@ -59,17 +72,6 @@ $stilo: (
               flex-direction: row;
   }
               
-  #header__nav ul li {   
-                          list-style: none; 
-                          margin: 5px; 
-                         }
-  
-  #header__nav a{ 
-                  text-decoration: none; 
-                  color: black;
-                  text-transform: capitalize;}
-  
-  #header__nav a:hover{ color:royalblue;}
   /*fin header*/
   /*Inicio Index*/
   
@@ -80,7 +82,29 @@ $stilo: (
               width: 97%vw; 
               background-size: cover;
               background-position: center;
-              grid-area: div;}
+             }
+.figure{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 241, 241);
+    justify-content: center;
+
+.div__figure{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        color: black;
+        div{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            h2{
+                color: black;
+            }
+        }
+    }
+}
 
 .div__imagenes__index{
                         display: flex;
@@ -106,83 +130,73 @@ $stilo: (
                 font-size: 32px;
                 background-color: rgb(241, 241, 241);
                 height: 160px;
+                color: black;
 }
 
   
   /*section*/
   .section__noticias{ 
                       display: flex;
-                      border: solid white 3px;
+                      border: solid rgb(241, 241, 241) 3px;
                       justify-content: center;
-                      background-color: rgb(241, 241, 241); 
-                      color: rgb(0, 0, 0);
+                      background-color: rgb(49, 49, 49); 
+                      color: rgb(255, 255, 255);
                       grid-area: noticias;}  
   
   /*modificacion general*/
   .article__a{
               text-decoration: none; 
-              color: black;
+              color: rgb(255, 255, 255);
               font-size: 15px;
   
             .article__a:hover{
                             color: royalblue;}
                 }
   
-  
-  .uno__section{
-      border: solid white 3px; 
-      height: 33,3% ;
-      font-style: italic 18px;
-      background:rgb(241, 241, 241); 
-      justify-content: center;
-      text-align: center;
-      color: rgb(0, 0, 0);
-      display: flex;
-      grid-area: section_uno;}
+#carouselExampleCaptions{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 250px;
+}       
 
-  
-  .dos__section{
-      border: solid white 3px;
-      height: 33,3% ;
-      font-style: italic 18px;
-      background:rgb(241, 241, 241); 
-      justify-content: center;
-      text-align: center; 
-      color: rgb(0, 0, 0);
-      display: flex;
-      grid-area: section_dos;}
-  
-  
-  .tres__section{
-       border: solid white 3px; 
-       height: 33,3%; 
-       font-style: italic 18px;
-       background:rgb(241, 241, 241);
-       text-align: center;
-       justify-content: center;
-       color: rgb(0, 0, 0);
-       display: flex;
-       grid-area: section_tres;}
-  
+.section__carrusel{
+                div{
+
+                    display: flex;
+                    flex-direction: row;
+                }
+}
+
+  .section2__carrusel{
+        height: 250px;
+        font-style: italic 18px;
+        background:rgb(49, 49, 49); 
+        text-align: center;
+        color: rgb(255, 255, 255);
+      }
+
+
+
   .footer{
           display: flex;    
           background: rgb(241, 241, 241);
-          flex-direction: column;
-          
-          div{
-                display: flex;
-                flex-direction: row;
-                text-align: center;
-                justify-content: center;
+          flex-direction: column; 
+          .div__card{
+              height: 280px;
           }
-          section{
+          .footer__div1{
               display: flex;
               flex-direction: column;
+              align-items: center;
+              text-align: center;
+              }
+          
+          .footer__div2{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
           }
-    }
- .section__footer{
-                    display: flex;
-                    flex-direction: row;         
   }
   
   /*FIN INDEX*/
@@ -253,6 +267,10 @@ $stilo: (
   /*fin pagina 1*/
   
   /*inicio pagina 2*/
+    .boton__menuCatalogo{
+                        background-color: rgb(241, 241, 241);
+    }
+
     .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
                    height: 50vh;
                    background-size: cover;
@@ -385,7 +403,7 @@ $stilo: (
                     color: royalblue;
                                         }
     }
-    
+
   /*fin pagina 2*/
   
   /*inicio pagina 3*/
@@ -620,7 +638,6 @@ $stilo: (
                                           *{
                                               padding: 0px;
                                               margin: 0px;
-                                              background-color:rgb(241, 241, 241) ;
                                           }
                                           .header{
                                                       justify-content: center;
@@ -631,61 +648,47 @@ $stilo: (
                                               display: flex;
                                               flex-direction: column;
                                               margin: 0px;
+                                              align-items: center;
+                                              img{
+                                                  height: 400px;
+                                                  width: 250px;
+                                              }
                                           }
 
                                         .imagen__2{
                                             display: flex;
                                             flex-direction: column;
+                                            align-items: center;
+                                            img{
+                                                height: 500px;
+                                                width: 250px;
+                                            }
                                         }
 
                                           .div__index{
                                                       width: 100%;
                                           }                                        
-  
-                                          .main__index{
-                                                       width: 100vw;
+                                        
+                                          .figure{
+                                              display: flex;
+                                              flex-direction: column;
                                           }
-                                          
-                                          .uno__section{
-                                                        width: 100%;  
-                                                        flex-direction: column;
-                                                        align-content: center;
-                                                        border: 0px;
-                                                        border-top:3px solid white ;
-                                                        border-bottom:3px solid white ;  
-                                          }
-                                          .dos__section{
-                                                        width:100% ;  
-                                                        flex-direction: column;
-                                                        text-align: center;
-                                                        border: 0px;
-                                                        border-top:3px solid white ;
-                                                        border-bottom:3px solid white ;  
-                                          }
-                                          .tres__section{
-                                                          width: 100%;
-                                                          flex-direction: column;
-                                                          align-content: center;
-                                                          border: 0px;
-                                                          border-top:3px solid white ;
-                                                          border-bottom:3px solid white ;
-                                          }
+
                                           .footer{
                                                   flex-direction: column;
-                                                  align-content: center;
+
                                                   border: 0px;
                                                   border-top:3px solid white ;
                                                   border-bottom:3px solid white ;
+                                                  .footer__div2{
+                                                      display: flex;
+                                                      flex-direction: column;
+                                                      div{
+                                                        margin-top: 10px;
+                                                      }
+                                                  }
                                               }
-                                          .uno__imagen{
-                                                          width: 100%;
-                                          }
-                                          .dos__imagen{
-                                                          width: 100%;
-                                          }
-                                          .tres__imagen{
-                                                          width: 100%;
-                                          }
+
                                       
                                           /*fin index*/
                                       
