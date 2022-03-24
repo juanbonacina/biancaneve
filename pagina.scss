@@ -32,8 +32,12 @@ $stilo: (
 ---------------------------------------------------------------------------------------------------------
 *{
     margin: 0%;
-    padding: 0%;}
-    html{scroll-behavior: smooth;}
+    padding: 0%;
+    font-family: 'Libre Baskerville', serif;
+    }
+html{
+    scroll-behavior: smooth;
+}
            
     /*inicio header*/
   .header{ 
@@ -110,7 +114,7 @@ $stilo: (
                         display: flex;
                         flex-direction: column;
                         margin: 50;
-                        background-color: rgb(241, 241, 241) ;
+                        background-color: rgb(241, 241, 241);
                         }
 .imagen__1{
             display: flex ;
@@ -131,6 +135,13 @@ $stilo: (
                 background-color: rgb(241, 241, 241);
                 height: 160px;
                 color: black;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        margin-left: 20px;
+                    }
+                }
 }
 
   
@@ -280,17 +291,12 @@ $stilo: (
                    }
      
     .div__catalogo2{
-                    display: flex;                
+                    display: flex;
+                    flex-direction: column;                
                     background-color: rgb(241, 241, 241);
-                    justify-content: center;
+                    align-items: center;
                     padding-bottom: 20px;
                                                 }
-  
-    .div__catalogo3{
-                    display: flex;                
-                    background-color: rgb(241, 241, 241);
-                    justify-content: center;
-                }
 
     .div__catalogo4{
                     display: flex;                
