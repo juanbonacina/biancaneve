@@ -7,6 +7,26 @@
 html{
     scroll-behavior: smooth;
 }
+
+.divMas{
+    display: flex;
+    flex-direction: column;
+    .divRese{
+        display: flex;
+        flex-direction: column;
+        border: solid black 1px;
+        button{
+            width: 5%;
+        }
+        .reseAgregada{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+}
+
            
     /*inicio header*/
   .header{ 
@@ -250,6 +270,38 @@ html{
     .boton__menuCatalogo{
                         background-color: rgb(241, 241, 241);
     }
+
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .items__catalogo{
+            display: flex;
+            border: solid 1px black;
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+            
+            
+            
+
+        }
+    }
+    .catalogoCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 2px black;
+        margin-top: 5px;
+        .imgCatalogo{
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+    
 
     .div__catalogo{ background-image: url(imagenes_biancaneve/main2_pagina2.jpg);
                    height: 50vh;

@@ -19,7 +19,25 @@
     <main>
         <header class="header">
             <h1 class="header__titulo" id="arriba">Biancaneve</h1>
-            <h2 class="header__titulo">Sei uno con di bianca neve</h2>       
+            <h2 class="header__titulo">Sei uno con di bianca neve</h2>    
+            <div class="divCarrito" id="DivCarrito">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><img src="imagenes_biancaneve/imagenes__index/Icono_carrito.jpg" height="25px" width="25px"></button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">CARRITO</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+<!-------------------------------------------inicio del carrito----------------------------------------->
+
+                        <div class="offcanvas-body" id="Carrito">
+                            
+
+                        </div>
+                        <p><b>Precio Total:</b> $<span id="PrecioTotal"></span></p>
+                    </div>    
+                </div>
+            </div>    
+            
             <nav id="header__nav">
                 <ul class="ul__index" aria-labelledby="navbarDropdown">
                     <li class="nav-item" ><a class="nav-link" href="index.html">inicio</a></li>
@@ -38,124 +56,8 @@
 
         <div class="div__catalogo"></div>
 
-        <div class="boton__menuCatalogo">
-            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Menu</button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">MENU</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                        <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-                            <a class="navbar-brand" href="#">Menu</a>
-                            <nav class="nav nav-pills flex-column">
-                                <h5>Genero</h5>
-                                <nav class="nav nav-pills flex-column">
-                                    <h6>Hombre</h6>
-                                    <h6>Mujer</h6>
-                                    <h6>Niño</h6>
-                                    <h6>Niña</h6>
-                                </nav>
-                                <br>
-                                <h5>Deporte</h5>
-                                <nav class="nav nav-pills flex-column">
-                                    <h6>snowboard</h6>
-                                    <h6>Skii</h6>
-                                </nav>
-                                <br>
-                                <h5>Prendas</h5>
-                                <nav class="nav nav-pills flex-column">
-                                    <h6>pantalones</h6>
-                                    <h6>Hoodies</h6>
-                                    <h6>Camperas</h6>
-                                    <h6>Botas</h6>
-                                </nav>
-                            </nav>
-                        </nav>
-                </div>
-            </div>
-        </div>
-        <section class="section__catalogo">
-            <ul>
-                <li>
-                    <div class="div__imagen1__catalogo">
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__catalogo3.jpg" height="300px" width="300px"><span> pantalones mono-bib biancaneve <br>
-                        $29.500
-                        </span>
-                    </div>
-                </li> 
-            </ul>
+        <div id="divCatalogo" class="catalogo">
             
-            <br>
-            <div class="div__section__catalogo">
-                <ul>
-                    <li>
-                        <div>
-                            <img src="imagenes_biancaneve/imagenes__catalogo/imagen__catalogo3_2.jpg" height="300px" width="300px"><span> pantalones mono-bib biancaneve <br>
-                                $29.500
-                                </span>
-                        </div>
-                    </li>
-                    <li>  
-                        <div>
-                            <img src="imagenes_biancaneve/imagenes__catalogo/imagen__catalogo3_3.jpg" height="300px" width="300px"><span> pantalones mono-bib biancaneve <br>
-                                $29.500
-                                </span>
-                        </div>
-                    </li>      
-                </ul>
-            </div>
-        </section>
-
-        <div class="div__catalogo2">
-            <img src="imagenes_biancaneve/imagenes__index/imagen__3.jpg" height="500px" width="300px">
-            <span>Campera bomber biancaneve <br>$50.000</span>
-        </div>
-
-        <section class="section__catalogo2">
-            <ul>
-                <li>
-                    <div>
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__catalogo1.jpg" height="300px" width="300px" > <span> awile biancaneve <br>
-                            $49.500
-                            </span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__catalogo2.jpg" height="300px" width="300px" class="imagen__catalogo2"> <span> pantalones bib biancaneve <br>
-                            $29.500
-                            </span>
-                    </div>
-                </li>
-            </ul>    
-        </section>
-
-        <div class="div__catalogo2">
-            <img src="imagenes_biancaneve/imagenes__index/imagen__2.jpg" height="500px" width="300"> <span>Hoodie smart biancaneve <br>$20.000</span>
-        </div>
-
-        <div class="div__productos">
-            <ul>
-                <li>
-                    <div>
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__producto1.jpg" height="400px" width="250px"><span>Campera snow biancaneve mujer <br>$60.000</span>
-                    </div>
-                </li>
-
-                <li>
-                    <div>
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__producto2.jpg" height="400px" width="250px"><span>Mono snowboard biancaneve unisex <br> $40.000</span>
-                    </div>
-                </li>
-
-                <li>
-                    <div>
-                        <img src="imagenes_biancaneve/imagenes__catalogo/imagen__producto3.jpg" height="400px" width="250px"><span>Hoodie spin biancaneve unisex <br> $15.000</span>
-                    </div>
-                </li>
-
-            </ul>
         </div>
 
         <div class="div__catalogo4">
@@ -188,9 +90,12 @@
                 <p class="text-muted">Martin. B</p>
                 <p class="text-muted">hace 1 semana</p>
                 <div>
-                    <a href="#" class="btn btn-dark">Mas Reseñas</a>
+                    <a id="reseñas"  class="btn btn-dark">Mas Reseñas</a>
                 </div>
             </div>
+          </div>
+          <div id="mas" class="divMas">
+            
           </div>
 
         <div class="footer__div2">
@@ -233,5 +138,7 @@
         AOS.init(); 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="catalogo.js"></script>
+    <script src="Codigo.js"></script>
 </body>
 </html>
